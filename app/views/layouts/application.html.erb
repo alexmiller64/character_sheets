@@ -11,8 +11,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="bg-grey">
+      <%= image_tag "Dungeons-Dragons-Transparent-1.png", 
+        class: "w-full max-w-[1440px] h-auto rounded-full drop-shadow-lg mb-16 mx-auto" 
+      %>
+    <main class="w-full max-w-[1440px] mx-auto px-8 md:px-16 flex">
       <%= yield %>
     </main>
   </body>

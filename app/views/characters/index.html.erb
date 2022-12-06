@@ -1,4 +1,4 @@
-<div class="flex flex-col">
+<div class="flex flex-col w-full">
   <%= render CharacterSheetComponent.new(characters: @characters) do |stat_list| %>
     <% stat_list.name do %>
       <h1><%= @character.name %></h1>
