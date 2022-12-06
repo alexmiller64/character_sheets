@@ -4,6 +4,7 @@ class CharactersController < ApplicationController
   # GET /characters
   def index
     @characters = Character.all
+    @character = Character.last
   end
 
   # POST /characters
