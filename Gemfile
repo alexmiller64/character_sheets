@@ -34,6 +34,10 @@ gem "view_component"
 
 gem "inline_svg"
 
+group :development do
+  gem 'annotate'
+end
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

@@ -41,8 +41,17 @@ class CharactersController < ApplicationController
     @character = Character.find(params[:id])
   end
 
+
   # Only allow a list of trusted parameters through.
   def character_params
-    params.require(:character).permit(:name, :completed)
+    params.require(:character).permit(
+      :name, 
+      :character_class,
+      :level,
+      :race,
+      :background,
+      :alignment,
+      :image
+    )
   end
 end
