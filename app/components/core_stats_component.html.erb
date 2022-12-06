@@ -2,12 +2,12 @@
   method: :patch, 
   data: { controller: "character" } do |form| 
 %>
-  <div class="flex justify-between items-end w-full mb-32">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-end w-full mb-32">
     
     <div class="flex flex-col items-start">
       <% if @character.image.attached? %>
         <%= image_tag @character.image, 
-          class: "w-80 h-auto rounded-full drop-shadow-lg" 
+          class: "w-80 h-auto rounded-full drop-shadow-lg mb-12 md:mb-0" 
         %>
       <% end %>
 
@@ -20,12 +20,12 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-1 md:grid-rows-2 
-    gap-4">
+    gap-4 w-full md:w-[58%]">
       <div class="flex flex-col items-start">
         <%= form.label :name, "Name", class: "pl-1 mb-2" %>
         <%= form.text_field :name, 
           class: "bg-yellow rounded-lg drop-shadow-md border-none 
-          focus:ring-orange active:ring-orange", 
+          focus:ring-orange active:ring-orange w-full w-full", 
           data: { action: 'change->character#submit' } 
         %>
       </div>
@@ -33,7 +33,7 @@
         <%= form.label :character_class, "Class", class: "pl-1 mb-2" %>
         <%= form.text_field :character_class, 
           class: "bg-yellow rounded-lg drop-shadow-md border-none
-          focus:ring-orange active:ring-orange", 
+          focus:ring-orange active:ring-orange w-full", 
           data: { action: 'change->character#submit' } 
         %>
       </div>
@@ -41,7 +41,7 @@
         <%= form.label :level, "Level", class: "pl-1 mb-2" %>
         <%= form.text_field :level, 
           class: "bg-yellow rounded-lg drop-shadow-md border-none 
-          focus:ring-orange active:ring-orange", 
+          focus:ring-orange active:ring-orange w-full", 
           data: { action: 'change->character#submit' } 
         %>
       </div>
@@ -49,7 +49,7 @@
         <%= form.label :race, "Race", class: "pl-1 mb-2" %>
         <%= form.text_field :race, 
           class: "bg-yellow rounded-lg drop-shadow-md border-none 
-          focus:ring-orange active:ring-orange", 
+          focus:ring-orange active:ring-orange w-full", 
           data: { action: 'change->character#submit' } 
         %>
       </div>
@@ -58,7 +58,7 @@
         class: "pl-1 mb-2" %>
         <%= form.text_field :background, 
           class: "bg-yellow rounded-lg drop-shadow-md border-none 
-          focus:ring-orange active:ring-orange", 
+          focus:ring-orange active:ring-orange w-full", 
           data: { action: 'change->character#submit' } 
         %>
       </div>
@@ -66,7 +66,7 @@
         <%= form.label :alignment, "Alignment", class: "pl-1 mb-2" %>
         <%= form.text_field :alignment, 
           class: "bg-yellow rounded-lg drop-shadow-md border-none 
-          focus:ring-orange active:ring-orange", 
+          focus:ring-orange active:ring-orange w-full", 
           data: { action: 'change->character#submit' } 
         %>
       </div>
