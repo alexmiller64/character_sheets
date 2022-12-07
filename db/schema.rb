@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_06_203500) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_07_195952) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -51,6 +51,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_06_203500) do
     t.string "race"
     t.string "background"
     t.string "alignment"
+    t.integer "strength"
+    t.integer "strength_modifier"
+    t.integer "dexterity"
+    t.integer "dexterity_modifier"
+    t.integer "constitution"
+    t.integer "constitution_modifier"
+    t.integer "intelligence"
+    t.integer "intelligence_modifier"
+    t.integer "wisdom"
+    t.integer "wisdom_modifier"
+    t.integer "charisma"
+    t.integer "charisma_modifier"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

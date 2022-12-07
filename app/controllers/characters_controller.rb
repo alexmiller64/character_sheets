@@ -51,7 +51,9 @@ class CharactersController < ApplicationController
       :race,
       :background,
       :alignment,
-      :image
+      :image,
+      :strength,
+      :strength_modifier,
     )
   end
 end
