@@ -54,6 +54,16 @@ class CharactersController < ApplicationController
       :image,
       :strength,
       :strength_modifier,
+      :dexterity,
+      :dexterity_modifier,
+      :constitution,
+      :constitution_modifier,
+      :intelligence,
+      :intelligence_modifier,
+      :wisdom,
+      :wisdom_modifier,
+      :charisma,
+      :charisma_modifier
     )
   end
 end
