@@ -63,7 +63,17 @@ class CharactersController < ApplicationController
       :wisdom,
       :wisdom_modifier,
       :charisma,
-      :charisma_modifier
+      :charisma_modifier,
+      :armour_class,
+      :initiative,
+      :speed,
+      :hit_point_maximum,
+      :current_hit_points,
+      :hit_dice_maximum,
+      :current_hit_dice,
+      :passive_perception,
+      :death_save_success,
+      :death_save_failure
     )
   end
 end

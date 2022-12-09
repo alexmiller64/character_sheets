@@ -1,4 +1,7 @@
 <div id="<%= dom_id character %>" class="w-full">
   <%= render CoreStatsComponent.new(character: character) %>
-  <%= render AttributesBlockComponent.new() %>
+  <div class="flex justify-start gap-12">
+    <%= render AttributesBlockComponent.new() %>
+    <%= render VitalityBlockComponent.new() %>
+  </div>
 </div>
