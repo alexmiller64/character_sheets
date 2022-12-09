@@ -1,0 +1,16 @@
+<div class="grid grid-cols-2 grid-rows-2 w-fit gap-x-4 gap-y-8 bg-orange p-6 rounded-3xl text-green-200 drop-shadow-lg">
+  <%= render VitalComponent.new(vital: :armour_class) %>
+  <%= render VitalComponent.new(vital: :initiative) %>
+  <%= render VitalComponent.new(vital: :hit_point_maximum, 
+  label: "HP maximum") %>
+  <%= render VitalComponent.new(vital: :current_hit_points,
+  label: "Current HP") %>
+  <%= render VitalComponent.new(vital: :hit_dice_maximum,
+  label: "HD maximum") %>
+  <%= render VitalComponent.new(vital: :current_hit_dice,
+  label: "Current HD") %>
+  <%= render VitalComponent.new(vital: :death_save_failure,
+  label: "DS failure") %>
+  <%= render VitalComponent.new(vital: :death_save_success,
+  label: "DS success") %>
+</div>

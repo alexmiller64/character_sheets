@@ -23,6 +23,16 @@
 #  wisdom_modifier       :integer
 #  charisma              :integer
 #  charisma_modifier     :integer
+#  armour_class          :integer
+#  initiative            :integer
+#  speed                 :integer
+#  hit_point_maximum     :integer
+#  current_hit_points    :integer
+#  hit_dice_maximum      :integer
+#  current_hit_dice      :integer
+#  passive_perception    :integer
+#  death_save_success    :integer
+#  death_save_failure    :integer
 #
 class Character < ApplicationRecord
   has_one_attached :image

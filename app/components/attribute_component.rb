@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 class AttributeComponent < ViewComponent::Base
-  def initialize(character: Character.last, attribute:)
+  def initialize(character: Character.last, attribute:, label: nil)
     @character = character
     @attribute = attribute
+    @label = label
   end
 
   def attribute_modifier
