@@ -73,7 +73,27 @@ class CharactersController < ApplicationController
       :current_hit_dice,
       :passive_perception,
       :death_save_success,
-      :death_save_failure
+      :death_save_failure,
+      :race_trait_title_1,
+      :race_trait_blurb_1,
+      :race_trait_title_2,
+      :race_trait_blurb_2,
+      :race_trait_title_3,
+      :race_trait_blurb_3,
+      :race_trait_title_4,
+      :race_trait_blurb_4,
+      :race_trait_title_5,
+      :race_trait_blurb_5,
+      :race_trait_title_6,
+      :race_trait_blurb_6,
+      :race_trait_title_7,
+      :race_trait_blurb_7,
+      :race_trait_title_8,
+      :race_trait_blurb_8,
+      :race_trait_title_9,
+      :race_trait_blurb_9,
+      :race_trait_title_10,
+      :race_trait_blurb_10
     )
   end
 end

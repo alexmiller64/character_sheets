@@ -2,12 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+@layer base {
+  .vertical-container {
+    @apply bg-orange p-6 rounded-3xl text-green-200 drop-shadow-lg overflow-scroll max-h-[592px]
   }
 }
-
-*/

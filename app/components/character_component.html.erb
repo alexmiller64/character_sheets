@@ -3,5 +3,10 @@
   <div class="flex justify-start gap-12">
     <%= render AttributesBlockComponent.new() %>
     <%= render VitalityBlockComponent.new() %>
+    <%= render TextBlockComponent.new(
+      label: "#{@character.race} Traits", 
+      type: :race_trait, 
+      range_max: 9) 
+    %>
   </div>
 </div>

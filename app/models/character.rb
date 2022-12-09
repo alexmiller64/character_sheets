@@ -33,6 +33,26 @@
 #  passive_perception    :integer
 #  death_save_success    :integer
 #  death_save_failure    :integer
+#  race_trait_title_1    :string
+#  race_trait_blurb_1    :string
+#  race_trait_title_2    :string
+#  race_trait_blurb_2    :string
+#  race_trait_title_3    :string
+#  race_trait_blurb_3    :string
+#  race_trait_title_4    :string
+#  race_trait_blurb_4    :string
+#  race_trait_title_5    :string
+#  race_trait_blurb_5    :string
+#  race_trait_title_6    :string
+#  race_trait_blurb_6    :string
+#  race_trait_title_7    :string
+#  race_trait_blurb_7    :string
+#  race_trait_title_8    :string
+#  race_trait_blurb_8    :string
+#  race_trait_title_9    :string
+#  race_trait_blurb_9    :string
+#  race_trait_title_10   :string
+#  race_trait_blurb_10   :string
 #
 class Character < ApplicationRecord
   has_one_attached :image
