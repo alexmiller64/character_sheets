@@ -1,0 +1,7 @@
+<div class="vertical-container">
+  <h2 class="text-lg font-medium"><%= @label %></h2>
+  <% (1..@range_max).each do |i| %>
+    <%= render TextEntryComponent.new(title: "#{@type}_title_#{i}", 
+    blurb: "#{@type}_blurb_#{i}") %>
+  <% end %>
+</div>

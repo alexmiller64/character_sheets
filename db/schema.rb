@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_09_124341) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_09_134346) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -73,6 +73,26 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_09_124341) do
     t.integer "passive_perception"
     t.integer "death_save_success"
     t.integer "death_save_failure"
+    t.string "race_trait_title_1"
+    t.string "race_trait_blurb_1"
+    t.string "race_trait_title_2"
+    t.string "race_trait_blurb_2"
+    t.string "race_trait_title_3"
+    t.string "race_trait_blurb_3"
+    t.string "race_trait_title_4"
+    t.string "race_trait_blurb_4"
+    t.string "race_trait_title_5"
+    t.string "race_trait_blurb_5"
+    t.string "race_trait_title_6"
+    t.string "race_trait_blurb_6"
+    t.string "race_trait_title_7"
+    t.string "race_trait_blurb_7"
+    t.string "race_trait_title_8"
+    t.string "race_trait_blurb_8"
+    t.string "race_trait_title_9"
+    t.string "race_trait_blurb_9"
+    t.string "race_trait_title_10"
+    t.string "race_trait_blurb_10"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
