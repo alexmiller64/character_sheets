@@ -1,16 +1,28 @@
 <div class="grid grid-cols-4 grid-rows-1 w-fit gap-x-4 gap-y-8 bg-orange p-6 rounded-3xl horizontal-container">
-  <%= render VitalComponent.new(vital: :armour_class) %>
+  <%= render VitalComponent.new(vital: :armour_class,
+  label: "AC") %>
   <%= render VitalComponent.new(vital: :initiative) %>
   <%= render VitalComponent.new(vital: :hit_point_maximum, 
-  label: "HP maximum") %>
+  label: "HP Max") %>
   <%= render VitalComponent.new(vital: :current_hit_points,
   label: "Current HP") %>
   <%= render VitalComponent.new(vital: :hit_dice_maximum,
-  label: "HD maximum") %>
+  label: "HD Max") %>
   <%= render VitalComponent.new(vital: :current_hit_dice,
   label: "Current HD") %>
   <%= render VitalComponent.new(vital: :death_save_failure,
-  label: "DS failure") %>
+  label: "DS Failure") %>
   <%= render VitalComponent.new(vital: :death_save_success,
-  label: "DS success") %>
+  label: "DS Success") %>
+</div>
+
+<div class="grid grid-cols-2 grid-rows-2 w-fit gap-x-4 gap-y-8 bg-orange p-6 
+rounded-3xl horizontal-container">  
+  <%= render VitalComponent.new(vital: :proficiency_bonus, 
+  label: "PB") %>
+  <%= render VitalComponent.new(vital: :stealth_score, 
+  label: "Stealth Score") %>
+  <%= render VitalComponent.new(vital: :speed) %>
+  <%= render VitalComponent.new(vital: :passive_perception,
+  label: "PsvPerc") %>
 </div>

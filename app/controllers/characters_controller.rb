@@ -153,7 +153,10 @@ class CharactersController < ApplicationController
       :weapons_and_equipment_title_9,
       :weapons_and_equipment_blurb_9,
       :weapons_and_equipment_title_10,
-      :weapons_and_equipment_blurb_10
+      :weapons_and_equipment_blurb_10,
+      :proficiency_bonus,
+      :stealth_score
     )
   end
 end
+     

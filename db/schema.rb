@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_12_160520) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_12_165040) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -153,6 +153,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_160520) do
     t.string "weapons_and_equipment_blurb_9"
     t.string "weapons_and_equipment_title_10"
     t.string "weapons_and_equipment_blurb_10"
+    t.integer "proficiency_bonus"
+    t.integer "stealth_score"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

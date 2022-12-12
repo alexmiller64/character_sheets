@@ -113,6 +113,8 @@
 #  weapons_and_equipment_blurb_9  :string
 #  weapons_and_equipment_title_10 :string
 #  weapons_and_equipment_blurb_10 :string
+#  proficiency_bonus              :integer
+#  stealth_score                  :integer
 #
 class Character < ApplicationRecord
   has_one_attached :image
