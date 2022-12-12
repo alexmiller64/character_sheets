@@ -1,11 +1,8 @@
-<div class="grid grid-cols-2 grid-rows-2 w-fit gap-x-4 gap-y-8 bg-orange p-6 rounded-3xl vertical-container">
+<div class="grid grid-cols-3 grid-rows-2 w-fit gap-x-4 gap-y-8 bg-orange p-6 rounded-3xl horizontal-container">
   <%= render AttributeComponent.new(attribute: :strength) %>
   <%= render AttributeComponent.new(attribute: :dexterity) %>
   <%= render AttributeComponent.new(attribute: :constitution) %>
   <%= render AttributeComponent.new(attribute: :intelligence) %>
   <%= render AttributeComponent.new(attribute: :wisdom) %>
   <%= render AttributeComponent.new(attribute: :charisma) %>
-  <%= render VitalComponent.new(vital: :speed) %>
-  <%= render VitalComponent.new(vital: :passive_perception,
-  label: "PsvPerc") %>
 </div>

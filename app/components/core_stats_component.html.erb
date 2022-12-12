@@ -2,12 +2,12 @@
   method: :patch, 
   data: { controller: "character" } do |form| 
 %>
-  <div class="flex flex-col md:flex-row justify-between items-start md:items-end w-full mb-12 bg-orange p-6 rounded-3xl vertical-container">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-end w-full mb-10 bg-orange p-6 rounded-3xl vertical-container">
     
     <div class="flex flex-col items-start">
       <% if @character.image.attached? %>
         <%= image_tag @character.image, 
-          class: "w-80 h-auto rounded-full drop-shadow-lg mb-12 md:mb-0" 
+          class: "w-80 h-auto rounded-full drop-shadow-lg mb-10 md:mb-0" 
         %>
       <% end %>
 
