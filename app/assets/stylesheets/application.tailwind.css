@@ -4,6 +4,11 @@
 
 @layer base {
   .vertical-container {
-    @apply bg-orange p-6 rounded-3xl text-green-200 drop-shadow-lg overflow-scroll max-h-[592px]
+    @apply bg-orange p-6 rounded-3xl text-green-200 drop-shadow-lg 
+    overflow-scroll max-h-[592px] min-w-[250px]
+  }
+  .horizontal-container {
+    @apply bg-orange p-6 rounded-3xl text-green-200 drop-shadow-lg 
+    overflow-scroll
   }
 }

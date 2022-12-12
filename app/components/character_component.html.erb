@@ -1,16 +1,28 @@
 <div id="<%= dom_id character %>" class="w-full">
   <%= render CoreStatsComponent.new(character: character) %>
-  <div class="flex justify-between gap-6">
+  <div class="flex justify-start gap-6 mb-6">
     <%= render AttributesBlockComponent.new() %>
     <%= render VitalityBlockComponent.new() %>
+  </div>
+  <div class="flex justify-start gap-6">
+    <%= render TextBlockComponent.new(
+      label: "#{@character.character_class} Traits", 
+      type: :class_trait, 
+      range_max: 9) 
+    %>
     <%= render TextBlockComponent.new(
       label: "#{@character.race} Traits", 
       type: :race_trait, 
       range_max: 9) 
     %>
     <%= render TextBlockComponent.new(
-      label: "#{@character.character_class} Traits", 
-      type: :class_trait, 
+      label: "#{@character.background}/Feats/Misc Traits", 
+      type: :background_feat_misc, 
+      range_max: 3) 
+    %>
+    <%= render TextBlockComponent.new(
+      label: "Weapons and Equipment", 
+      type: :weapons_and_equipment, 
       range_max: 9) 
     %>
   </div>
