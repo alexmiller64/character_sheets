@@ -1,11 +1,16 @@
 <div id="<%= dom_id character %>" class="w-full">
   <%= render CoreStatsComponent.new(character: character) %>
-  <div class="flex justify-start gap-12">
+  <div class="flex justify-between gap-6">
     <%= render AttributesBlockComponent.new() %>
     <%= render VitalityBlockComponent.new() %>
     <%= render TextBlockComponent.new(
       label: "#{@character.race} Traits", 
       type: :race_trait, 
+      range_max: 9) 
+    %>
+    <%= render TextBlockComponent.new(
+      label: "#{@character.character_class} Traits", 
+      type: :class_trait, 
       range_max: 9) 
     %>
   </div>

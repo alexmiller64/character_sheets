@@ -93,7 +93,27 @@ class CharactersController < ApplicationController
       :race_trait_title_9,
       :race_trait_blurb_9,
       :race_trait_title_10,
-      :race_trait_blurb_10
+      :race_trait_blurb_10,
+      :class_trait_title_1,
+      :class_trait_blurb_1,
+      :class_trait_title_2,
+      :class_trait_blurb_2,
+      :class_trait_title_3,
+      :class_trait_blurb_3,
+      :class_trait_title_4,
+      :class_trait_blurb_4,
+      :class_trait_title_5,
+      :class_trait_blurb_5,
+      :class_trait_title_6,
+      :class_trait_blurb_6,
+      :class_trait_title_7,
+      :class_trait_blurb_7,
+      :class_trait_title_8,
+      :class_trait_blurb_8,
+      :class_trait_title_9,
+      :class_trait_blurb_9,
+      :class_trait_title_10,
+      :class_trait_blurb_10
     )
   end
 end
