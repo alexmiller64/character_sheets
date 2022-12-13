@@ -1,30 +1,33 @@
-<div id="<%= dom_id character %>" class="w-full flex justify-center flex-col">
-  <%= render CoreStatsComponent.new(character: character) %>
-  <div class="flex justify-start gap-5 mb-10 mx-auto">
-    <%= render AttributesBlockComponent.new() %>
-    <%= render VitalityBlockComponent.new() %>
+
+  <div id="<%= dom_id character %>" class="w-full flex justify-center flex-col">
+    <turbo-frame id="core">
+      <%= render CoreStatsComponent.new(character: character) %>
+      <div class="flex justify-center gap-5 mb-10 mx-auto">
+        <%= render AttributesBlockComponent.new() %>
+        <%= render VitalityBlockComponent.new() %>
+      </div>
+    </turbo-frame>    
+    <turbo-frame id="details" class="flex justify-start gap-5 mx-auto">
+      <%= render TextBlockComponent.new(
+        label: "Class Traits", 
+        type: :class_trait, 
+        range_max: 9) 
+      %>
+      <%= render TextBlockComponent.new(
+        label: "Race Traits", 
+        type: :race_trait, 
+        range_max: 9) 
+      %>
+      <%= render TextBlockComponent.new(
+        label: "Background/Feats/Misc", 
+        type: :background_feat_misc, 
+        range_max: 5
+        ) 
+      %>
+      <%= render TextBlockComponent.new(
+        label: "Weapons and Equipment", 
+        type: :weapons_and_equipment, 
+        range_max: 4) 
+      %>
+    </turbo-frame>
   </div>
-  <div class="flex justify-start gap-5 mx-auto">
-    <%= render TextBlockComponent.new(
-      label: "Class Traits", 
-      type: :class_trait, 
-      range_max: 9) 
-    %>
-    <%= render TextBlockComponent.new(
-      label: "Race Traits", 
-      type: :race_trait, 
-      range_max: 9) 
-    %>
-    <%= render TextBlockComponent.new(
-      label: "Background/Feats/Misc", 
-      type: :background_feat_misc, 
-      range_max: 5
-      ) 
-    %>
-    <%= render TextBlockComponent.new(
-      label: "Weapons and Equipment", 
-      type: :weapons_and_equipment, 
-      range_max: 4) 
-    %>
-  </div>
-</div>
